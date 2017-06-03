@@ -16,6 +16,9 @@
     <Filter Include="共享内存">
       <UniqueIdentifier>{168cf4d8-cb00-479a-b87b-c07ce7bfbce2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DLL注入">
+      <UniqueIdentifier>{d34027fa-f510-454c-b78a-cef639707554}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -51,6 +54,12 @@
     <ClInclude Include="CCurrencyAuth.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="InjectDll.h">
+      <Filter>DLL注入</Filter>
+    </ClInclude>
+    <ClInclude Include="virtualKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Console.cpp">
@@ -67,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="ShareMemoryService.cpp">
       <Filter>共享内存</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectDll.cpp">
+      <Filter>DLL注入</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -165,16 +165,19 @@ void CConsoleDlg::OnOK()
 
 void CConsoleDlg::OnShow()
 {
+	VMProtectBegin("OnShow");
 	CDialogEx::OnOK();
 
 	CMainDialog dlg;
 	theApp.m_pMainWnd = &dlg;
 	dlg.DoModal();
+	VMProtectEnd();
 }
 
 
 void CConsoleDlg::OnBnClickedButtonLogin()
 {
+	VMProtectBegin("OnBnClickedButtonLogin");
 	// TODO: µÇÂ¼
 	char szAcc[100];
 	GetDlgItem(IDC_EDIT_USERNAME)->GetWindowText(szAcc, sizeof(szAcc));
@@ -208,6 +211,7 @@ void CConsoleDlg::OnBnClickedButtonLogin()
 		break;
 		break;
 	}
+	VMProtectEnd();
 }
 
 

@@ -39,7 +39,7 @@
 extern ICurrencyAuthPtr pAuth;	//验证组件对象指针
 
 
-
+#include "VMProtectSDK.h"
 
 
 #ifdef _UNICODE

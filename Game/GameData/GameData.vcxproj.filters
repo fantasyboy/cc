@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b3369c3e-4a5e-460b-a93f-cbcd4c9b3a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\对象基类">
+      <UniqueIdentifier>{3720bca0-5a88-4245-829c-1c8062eb5a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\共享内存">
+      <UniqueIdentifier>{93325610-f1c5-4719-8ce0-8616aa7223a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\BUFF对象">
+      <UniqueIdentifier>{38bb4e3d-5e88-4b7c-b56d-a80722fd276e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\工具类">
+      <UniqueIdentifier>{034fd1a7-b9c2-48aa-8958-49ba65b9e436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\CALL">
+      <UniqueIdentifier>{7a6bd721-b0d0-4792-83ae-3620934d591b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\技能对象">
+      <UniqueIdentifier>{3c667613-a6af-4f79-8149-b0b64b6b1025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\装备对象">
+      <UniqueIdentifier>{454bbdb3-1b5a-4810-8fae-8886380b247b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\怪物对象">
+      <UniqueIdentifier>{1756a925-35b3-4103-9e60-272a696bb3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\主线程">
+      <UniqueIdentifier>{47c29471-ddb7-4f98-b19f-0800c7edc04e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>Game\对象基类</Filter>
+    </ClInclude>
+    <ClInclude Include="CShareStruct.h">
+      <Filter>Game\共享内存</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareMemoryService.h">
+      <Filter>Game\共享内存</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Game\BUFF对象</Filter>
+    </ClInclude>
+    <ClInclude Include="StringCovert.h">
+      <Filter>Game\工具类</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Game\工具类</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCall.h">
+      <Filter>Game\CALL</Filter>
+    </ClInclude>
+    <ClInclude Include="skill.h">
+      <Filter>Game\技能对象</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferService.h">
+      <Filter>Game\BUFF对象</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillService.h">
+      <Filter>Game\技能对象</Filter>
+    </ClInclude>
+    <ClInclude Include="equipment.h">
+      <Filter>Game\装备对象</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentService.h">
+      <Filter>Game\装备对象</Filter>
+    </ClInclude>
+    <ClInclude Include="monster.h">
+      <Filter>Game\怪物对象</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>Game\怪物对象</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterService.h">
+      <Filter>Game\怪物对象</Filter>
+    </ClInclude>
+    <ClInclude Include="HookToMainThread.h">
+      <Filter>Game\主线程</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>Game\对象基类</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareMemoryService.cpp">
+      <Filter>Game\共享内存</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.cpp">
+      <Filter>Game\BUFF对象</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Game\工具类</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCall.cpp">
+      <Filter>Game\CALL</Filter>
+    </ClCompile>
+    <ClCompile Include="skill.cpp">
+      <Filter>Game\技能对象</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferService.cpp">
+      <Filter>Game\BUFF对象</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillService.cpp">
+      <Filter>Game\技能对象</Filter>
+    </ClCompile>
+    <ClCompile Include="equipment.cpp">
+      <Filter>Game\装备对象</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentService.cpp">
+      <Filter>Game\装备对象</Filter>
+    </ClCompile>
+    <ClCompile Include="monster.cpp">
+      <Filter>Game\怪物对象</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Game\怪物对象</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterService.cpp">
+      <Filter>Game\怪物对象</Filter>
+    </ClCompile>
+    <ClCompile Include="HookToMainThread.cpp">
+      <Filter>Game\主线程</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

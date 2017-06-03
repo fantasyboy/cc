@@ -84,8 +84,9 @@ BOOL CConsoleApp::InitInstance()
 		AfxMessageBox("从内存加载通信文件失败！");
 		return FALSE;
 	}
-
+	VMProtectBegin("Initialize");
 	auto result = pAuth->Initialize("{C1E14188-7629-4B10-B2B5-E03B523C90E6}");//验证组件初始化
+	VMProtectEnd();
 
 	if (result == -1)
 	{
@@ -141,12 +142,14 @@ BOOL CConsoleApp::InitInstance()
 
 bool CConsoleApp::BMoreOpen()
 {
+	VMProtectBegin("BMoreOpen");
 	auto temp = ::CreateMutex(NULL, FALSE, "Console_hxl");
 	if (GetLastError() == ERROR_ALREADY_EXISTS)
 	{
 		CloseHandle(temp);
 		return true;
 	}
+	VMProtectEnd();
 	return false;
 }
 
